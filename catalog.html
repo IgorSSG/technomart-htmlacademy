@@ -108,12 +108,12 @@
           <ul class="power-filter-list">
             <li>
               <label>
-              АККУМУЛЯТОРНЫЕ<input type="checkbox" name="АККУМУЛЯТОРНЫЕ" value="АККУМУЛЯТОРНЫЕ" checked>
+              АККУМУЛЯТОРНЫЕ<input type="radio" name="АККУМУЛЯТОРНЫЕ" value="АККУМУЛЯТОРНЫЕ" checked>
               </label>
             </li>
             <li>
               <label>
-                СЕТЕВЫЕ<input type="checkbox" name="СЕТЕВЫЕ" value="СЕТЕВЫЕ">
+                СЕТЕВЫЕ<input type="radio" name="СЕТЕВЫЕ" value="СЕТЕВЫЕ">
               </label>
             </li>
           </ul>
@@ -192,7 +192,7 @@
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           +7 (812) 555-05-55
         </p>
-        <nav class="footer-navigation">
+        <div class="footer-navigation">
           <ul class="footer-menu">
             <li><a href="about.html">Компания</a></li>
             <li><a href="news.html">Новости</a></li>
@@ -200,15 +200,15 @@
             <li><a href="shipping.html">Доставка</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
-        </nav>
-        <nav class="market-navigation">
+        </div>
+        <div class="market-navigation">
           <ul class="footer-market-menu">
             <li><a href="materials.html">Материалы</a></li>
             <li><a href="tech.html">Техника</a></li>
             <li><a href="instrument.html">Инструмент</a></li>
             <li><a href="special-offers.html">Спецпредложения</a></li>
           </ul>
-        </nav>
+        </div>
       </div>
       <div class="main-footer">
         <p>
@@ -232,5 +232,11 @@
         </p>
       </div>
     </footer>
+    <section class="modal modal-cart">
+      <h2 class="modal-main">Товар добавлен в корзину</h2>
+      <button class="button close-button"type="button" name="button">X</button>
+      <button class="button red-button checkout-button" type="button" name="button"></button>
+      <button class="button" type="button" name="button"></button>
+    </section>
   </body>
 </html>
