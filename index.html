@@ -31,17 +31,16 @@
       </section>
       <section class="contacts-section">
         <h2 class="visually-hidden">Контакты</h2>
-        <span class="phone-button">
-          <img src="img/icon-phone.png" width="19" height="19" alt="Иконка телефона">
-          <a href="tel:+78125550555">+7(812)555-05-55</a>
-        </span>
+        <a class="button phone-button" href="tel:+78125550555">
+          <img src="img/icon-phone.png" width="19" height="19" alt="Иконка телефона">+7(812)555-05-55
+        </a>
         <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </section>
       <section class="main-panel">
         <h2 class="visually-hidden">Основная панель пользователя</h2>
         <ul class="user-main-buttons">
-          <li><span class="login-button"><img src="img/icon-login.png" width="20" height="17" alt="Иконка входа"> Войти</span></li>
-          <li><span class="registration-button">Регистрация</span></li>
+          <li><a class="button login-button" href="login.html"><img src="img/icon-login.png" width="20" height="17" alt="Иконка входа">Войти</a></li>
+          <li><a class="button registration-button" href="registration.html">Регистрация</a></li>
         </ul>
       </section>
       <nav class="main-navigation">
@@ -73,7 +72,7 @@
         <h2>Контакты</h2>
         <p class="main-text">Вы можете забрать товар сами,<br>заехав в наш офис:</p>
         <img src="img/map-contacts.jpg" width="300" height="158" alt="Картинка Карты">
-        <span class="button red-button contact-us-button">Заблудились? Напишите нам!</span>
+        <button class="button red-button contact-us-button" type="button help-button">Заблудились? Напишите нам!</button>
       </section>
     </main>
     <footer>
@@ -83,7 +82,7 @@
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           +7 (812) 555-05-55
         </p>
-        <nav class="footer-navigation">
+        <div class="footer-navigation">
           <ul class="footer-menu">
             <li><a href="about.html">Компания</a></li>
             <li><a href="news.html">Новости</a></li>
@@ -91,15 +90,15 @@
             <li><a href="shipping.html">Доставка</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
-        </nav>
-        <nav class="market-navigation">
+        </div>
+        <div class="market-navigation">
           <ul class="footer-market-menu">
             <li><a href="materials.html">Материалы</a></li>
             <li><a href="tech.html">Техника</a></li>
             <li><a href="instrument.html">Инструмент</a></li>
             <li><a href="special-offers.html">Спецпредложения</a></li>
           </ul>
-        </nav>
+        </div>
       </div>
       <div class="main-footer">
         <p>
@@ -123,5 +122,29 @@
         </p>
       </div>
     </footer>
+    <section class="modal modal-write-us">
+      <button class="modal-close" type="button" name="modal-close">Закрыть</button>
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <label>
+          <p>Ваше имя:</p>
+          <input type="text" name="user-name" placeholder="Имя Фамилия">
+        </label>
+        <label>
+          <p>Ваш e-mail:</p>
+          <input type="email" name="email" placeholder="email@example.com">
+        </label>
+        <label>
+          <p>Текст письма:</p>
+          <input type="text" name="letter-text" placeholder="В свободной форме">
+        </label>
+        <button class="button feedback-button" type="submit" name="feedback-button">Отправить</button>
+      </form>
+    </section>
+    <section class="modal modal-map">
+      <button class="modal-close" type="button" name="modal-close">Закрыть</button>
+      <h2 class="visually-hidden">Как проехать</h2>
+      <img src="img/map-popup.jpg" width="1736" height="779" alt="Большая картинка карты">
+    </section>
   </body>
 </html>
