@@ -19,14 +19,12 @@
 header{
   background-color: #f4f7f9
 }
+
 body {
   margin: 0px;
   padding: 0px;
-
   font-family: "Cuprum", Arial, sans-serif;
   color: #000000;
-
-  background-color: lightblue;
 }
 
 a {
@@ -34,13 +32,40 @@ a {
   color: #ffffff;
 }
 
+.red-button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  border: none;
+  border-radius: 2px;
+}
+
+.red-button:hover,
+.red-button:focus {
+  background-color: #ca2c37;
+}
+
+.red-button:active {
+  background-color: #ba2732;
+}
+
+section {
+  border: 1px solid transparent;
+}
+
+
+/*HEADER START*/
+
 .upper-section {
   font-size: 17px;
   line-height: 1.06;
   color: #ffffff;
-
   background-color: #293449;
 }
+
 .info-section {
   font-size: 16px;
   font-style: italic;
@@ -48,39 +73,75 @@ a {
   text-align: left;
   color: #ee3643;
 }
+
+.user-instruments,
+.checkout {
+  list-style-type: none;
+}
+
 .contacts-section .phone-button {
   color: #ee3643;
   font-size: 21px;
   border: 2px solid #ffffff;
 }
+
 .address {
   font-size: 14px;
   color: #32425c;
 }
-.login-button{
+
+.user-main-buttons {
+  list-style-type: none;
+}
+
+.login-button {
   width: 121px;
   height: 45px;
-
   font-size: 21px;
   color: #000000;
-
   background-color: #ffffff;
 }
+
 .registration-button {
   width: 150px;
   height: 45px;
-
   font-size: 21px;
   color: #000000;
-
   background-color: #ffffff;
 }
-.user-instruments li,
-.checkout li,
-.user-main-buttons li,
-.main-navigation li,
-.footer-navigation li,
-.market-navigation li,
-.footer-social li {
+
+.main-navigation {
+  font-size: 17px;
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.main-navigation ul {
   list-style-type: none;
 }
+
+
+/*HEADER END*/
+
+/*MAIN START*/
+
+.our-company h2 {
+  font-size: 30px;
+  color: #000000;
+}
+
+.main-text-our-company {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.85;
+  color: #000000;
+}
+
+.transport-companies li{
+  list-style-image: url(index-list.png);
+  font-size: 18px;
+  color: #000000;
+}
+
+
+/*MAIN END*/
