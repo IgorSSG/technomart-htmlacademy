@@ -85,6 +85,20 @@ section {
   list-style-type: none;
 }
 
+.upper-section-button:hover {
+  background-color: #212a3a;
+}
+
+.user-checkout {
+  display: block;
+  border: 1px solid transparent;
+  width: 150px;
+  height: 42px;
+  padding: 0;
+  background-color: #63a63e;
+  text-align: center;
+}
+
 .contacts-section .phone-button {
   color: #ee3643;
   font-size: 21px;
@@ -116,10 +130,51 @@ section {
   background-color: #ffffff;
 }
 
-.main-navigation {
+.login-button:hover,
+.login-button:focus,
+.registration-button:hover,
+.registration-button:hover {
+  color: #ee3643;
+}
+
+.login-button:active,
+.registration-button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-profile a {
+  font: inherit;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.user-profile-links {
+  list-style-type: none;
+}
+
+.user-profile-links a {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.main-navigation a {
   font-size: 17px;
   color: #ffffff;
+  background-color: #32425c;
+  box-shadow: inset 0px -5px 0 0 #293449;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
   background-color: #293449;
+}
+.main-navigation a:active{
+  background-color: #293449;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .main-navigation ul {
@@ -131,6 +186,18 @@ section {
 
 /*MAIN START*/
 
+.catalog-navigation li {
+  display: inline;
+  margin-right: 15px;
+}
+.catalog-navigation a {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
 .our-company h2,
 .contacts h2 {
   font-size: 30px;
@@ -140,7 +207,7 @@ section {
 
 .main-text-our-company,
 .main-text-contacts {
-  font-family: "PTSans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -151,6 +218,7 @@ section {
   font-size: 18px;
   color: #000000;
 }
+
 
 /*MAIN END*/
 
@@ -246,3 +314,14 @@ section {
   text-decoration: none;
 }
 /*FOOTER END*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
