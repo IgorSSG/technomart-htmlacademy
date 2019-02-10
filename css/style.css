@@ -213,15 +213,99 @@ section {
   color: #000000;
 }
 
-.transport-companies li{
+.transport-companies li {
   list-style-image: url(index-list.png);
   font-size: 18px;
   color: #000000;
 }
 
+.product-name {
+  height: 89px;
+  background-color: #f2f6f8;
+}
 
+.product-name h2 {
+  font: inherit;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+fieldset {
+  border: none;
+}
+
+.product-filter legend {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.product-filter ul {
+  list-style-type: none;
+}
+
+.product-filter li {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filter-button {
+  width: 140px;
+  height: 38px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+
+.catalog-item {
+  display: inline-block;
+  list-style-type: none;
+  width: 220px;
+  border: 1px solid #e5e5e5;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+}
+.catalog-item h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+  text-align: center;
+}
+
+.old-price {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: line-through;
+  color: #999999;
+  text-align: center;
+}
+
+.price {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #ee3643;
+}
 /*MAIN END*/
-
 
 /*FOOTER START*/
 
@@ -315,7 +399,7 @@ section {
 }
 /*FOOTER END*/
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -324,4 +408,4 @@ section {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
