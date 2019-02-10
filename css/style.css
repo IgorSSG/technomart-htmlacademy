@@ -61,15 +61,21 @@ section {
 
 .upper-section {
   font-size: 17px;
-  line-height: 1.06;
+  line-height: 18px;
   color: #ffffff;
   background-color: #293449;
+}
+
+.main-header-button {
+  padding: 13px 54px 16px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
 }
 
 .info-section {
   font-size: 16px;
   font-style: italic;
-  line-height: 1.44;
+  line-height: 23px;
   text-align: left;
   color: #ee3643;
 }
@@ -125,15 +131,18 @@ section {
 
 /*MAIN START*/
 
-.our-company h2 {
+.our-company h2,
+.contacts h2 {
   font-size: 30px;
   color: #000000;
+  line-height: 30px;
 }
 
-.main-text-our-company {
+.main-text-our-company,
+.main-text-contacts {
   font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
-  line-height: 1.85;
+  line-height: 24px;
   color: #000000;
 }
 
@@ -143,5 +152,97 @@ section {
   color: #000000;
 }
 
-
 /*MAIN END*/
+
+
+/*FOOTER START*/
+
+.main-footer-button {
+  padding: 20px 41px 21px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+}
+
+.footer-info{
+  background-color: #32425c;
+  border: 1px solid transparent;
+}
+
+.footer-address {
+  font-size: 18px;
+  line-height: 1.33;
+  color: #f3f7f9;
+}
+
+.footer-menu li,
+.market-navigation li{
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+  list-style-type: none;
+}
+
+.market-navigation a{
+  color: #ffd180;
+}
+
+.main-footer {
+  background-color: #293449;
+  border: 1px solid transparent;
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+
+.footer-social li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+
+.footer-social a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #212a3a;
+  cursor: pointer;
+}
+.footer-social a:hover,
+.footer-social a:focus,
+.footer-social a:active {
+  background-color: #ee3643;
+}
+
+.vk-button img {
+  margin-top: 15px;
+}
+
+.fb-button img {
+  margin-top: 11px;
+}
+
+.inst-button img {
+  margin-top: 10.5px;
+}
+
+.footer-link {
+  font: inherit;
+  color: #ffd180;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  text-decoration: underline;
+}
+
+.footer-link:active {
+  color: rgba(255, 209, 128, 0.5);
+  text-decoration: none;
+}
+/*FOOTER END*/
