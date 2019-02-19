@@ -298,6 +298,7 @@ section {
   line-height: 18px;
   font-weight: 400;
   color: #ffffff;
+  display: flex;
 }
 
 .infoblock h3 {
@@ -350,8 +351,12 @@ section {
 }
 
 .sevise-blocks {
+  margin-left: 10px;
+  margin-top: 20px;
+  height: 266px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 /* СЛАЙДЕР */
@@ -436,6 +441,7 @@ section {
 .popular-products-name {
   margin-bottom: 21px;
 }
+
 .popular-products-name .container {
   background-color: #f9f5f0;
   padding: 25px 0;
@@ -443,6 +449,7 @@ section {
   justify-content: space-around;
   align-items: center;
 }
+
 .popular-products-name h2 {
   width: 380px;
   font: inherit;
@@ -452,6 +459,7 @@ section {
   color: #32425c;
   margin: 0;
 }
+
 .popular-products-button {
   width: 300px;
   margin: 0;
@@ -484,11 +492,10 @@ section {
   text-align: center;
 }
 
-
-
 .popular-manufacturers-name {
   margin-bottom: 20px;
 }
+
 .popular-manufacturers-name .container {
   background-color: #f9f5f0;
   padding: 25px 0;
@@ -496,6 +503,7 @@ section {
   justify-content: space-around;
   align-items: center;
 }
+
 .popular-manufacturers-name h2 {
   width: 460px;
   font: inherit;
@@ -505,9 +513,33 @@ section {
   color: #32425c;
   margin: 0;
 }
+
 .popular-manufacturers-button {
   width: 300px;
   margin: 0;
+}
+
+.popular-manufacturers {
+  margin-bottom: 85px;
+}
+
+.popular-manufacturers .container {
+  height: 310px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+}
+
+.manufacturer {
+  margin: 0;
+  width: 220px;
+  height: 145px;
+  border: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .catalog-navigation li {
