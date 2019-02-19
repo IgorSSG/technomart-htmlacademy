@@ -431,14 +431,9 @@ section {
 }
 
 /* СЛАЙДЕР КОНЕЦ */
-.main-catalog-list {
-  width: 960px;
-  margin: 0 auto;
-  padding: 0 10px;
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-}
+
+
+
 .main-catalog-item {
   width: 220px;
   height: 318px;
