@@ -458,7 +458,7 @@ section {
 }
 
 .popular-products {
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
 .container .main-catalog-list {
@@ -482,6 +482,32 @@ section {
   font-weight: 700;
   color: #000000;
   text-align: center;
+}
+
+
+
+.popular-manufacturers-name {
+  margin-bottom: 20px;
+}
+.popular-manufacturers-name .container {
+  background-color: #f9f5f0;
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.popular-manufacturers-name h2 {
+  width: 460px;
+  font: inherit;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+  margin: 0;
+}
+.popular-manufacturers-button {
+  width: 300px;
+  margin: 0;
 }
 
 .catalog-navigation li {
