@@ -82,18 +82,20 @@ section {
 
 .logo {
   margin: 0;
-  width: 220px;
   box-sizing: border-box;
   text-align: center;
-  border: 1px solid transparent;
   width: 220px;
   height: 42px;
   background-color: #ee3643;
 }
 
-.logo::before {
+/* .logo::before {
   content: "";
-}
+  display: block;
+  width: 220px;
+  height: 42px;
+  box-shadow: inset 0px -5px 0 0;
+} */
 
 .search-section {
   margin: 0;
@@ -431,13 +433,46 @@ section {
 }
 
 /* СЛАЙДЕР КОНЕЦ */
+.popular-products-name {
+  margin-bottom: 21px;
+}
+.popular-products-name .container {
+  background-color: #f9f5f0;
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.popular-products-name h2 {
+  width: 380px;
+  font: inherit;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+  margin: 0;
+}
+.popular-products-button {
+  width: 300px;
+  margin: 0;
+}
 
+.popular-products {
+  margin-bottom: 21px;
+}
 
+.container .main-catalog-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
 
 .main-catalog-item {
   width: 220px;
-  height: 318px;
   border: 1px solid #eaeaea;
+  margin: 0;
 }
 
 .main-catalog-item h3 {
@@ -453,6 +488,7 @@ section {
   display: inline;
   margin-right: 15px;
 }
+
 .catalog-navigation a {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
