@@ -25,6 +25,7 @@ body {
   padding: 0px;
   font-family: "Cuprum", Arial, sans-serif;
   color: #000000;
+  font-weight: 400;
   min-width: 1200px;
   min-height: 1750px;
 }
@@ -776,10 +777,11 @@ fieldset {
 
 .product-filter-title {
   margin: 0;
-  width: 202px;
+  width: 100%;
   height: 38px;
-  padding-left: 18px;
+
   background-color: #f7f3ec;
+  border-radius: 2px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -792,6 +794,70 @@ fieldset {
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
+  padding-left: 18px;
+}
+
+.filter {
+
+}
+
+.price-counter {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.price-rage {
+  width: 220px;
+  height: 78px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  background-color: #f7f3ec;
+  border-radius: 2px;
+}
+
+.price-values {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-values input {
+  width: 95px;
+  height: 38px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  background-color: #f7f3ec;
+  border-radius: 2px;
+  border: none;
+  text-align: center;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.defice {
+  height: 28px;
+}
+
+.filter-line {
+  display: block;
+  border: none;
+  background-color: #e5e5e5;
+  height: 2px;
+  width: 220px;
+  margin: 0;
+  padding: 0;
 }
 
 .product-filter legend {
@@ -922,7 +988,7 @@ fieldset {
   text-align: center;
   border: 1px solid transparent;
   width: 220px;
-  height: 68px;
+  height: 63px;
   background-color: #ee3643;
   display: flex;
   justify-content: center;
@@ -932,7 +998,7 @@ fieldset {
 .footer-logo::before {
   content: "";
   position: absolute;
-  top: 68px;
+  top: 63px;
   width: 220px;
   height: 5px;
   background-color: #b52933;
@@ -986,7 +1052,7 @@ fieldset {
 }
 
 .contact-info {
-  width: 300px;
+  width: 310px;
   margin:auto;
   display: flex;
   justify-content: space-between;
