@@ -66,6 +66,8 @@ section {
 /*HEADER START*/
 
 .upper-section {
+  height: 42px;
+  border: none;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
@@ -75,9 +77,11 @@ section {
 }
 
 .upper-section .container {
+  height: inherit;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
 }
 
 .logo {
@@ -92,33 +96,44 @@ section {
   align-items: center;
 }
 
-/* .logo::before {
+.logo::before {
   content: "";
-  display: block;
+  position: absolute;
+  bottom: -5px;
   width: 220px;
-  height: 42px;
-  box-shadow: inset 0px -5px 0 0;
-} */
+  height: 5px;
+  background-color: #b52933;
+}
 
 .search-section {
   margin: 0;
   width: 240px;
+  height: 100%;
   margin-right: 10px;
   box-sizing: border-box;
 }
 
 .user-instruments {
+  height: 100%;
   margin: 0;
+  padding: 0;
   width: 320px;
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   box-sizing: border-box;
 }
+
 .upper-section-button {
   margin: 0;
-  width: 160px;
+  font-size: 17px;
+  line-height: 42px;
+  text-align: center;
+  width: 150px;
+  height: 100%;
+  display: block;
   box-sizing: border-box;
+
 }
 
 .user-checkout {
@@ -131,12 +146,6 @@ section {
   margin-bottom: 40px;
 }
 
-.upper-section-button {
-  border: 1px solid transparent;
-  font-size: 17px;
-  line-height: 18px;
-  text-align: center;
-}
 .upper-section-button:hover {
   background-color: #212a3a;
 }
@@ -755,11 +764,34 @@ fieldset {
   width: 220px;
   margin-right: 20px;
   border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .sort-and-catalog {
   margin: 0;
   width: 700px;
+}
+
+.product-filter-title {
+  margin: 0;
+  width: 202px;
+  height: 38px;
+  padding-left: 18px;
+  background-color: #f7f3ec;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.product-filter-title h2 {
+  margin: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .product-filter legend {
@@ -841,7 +873,7 @@ fieldset {
 
 .footer {
   background-color: #32425c;
-  border: 1px solid transparent;
+  border: none;
 }
 
 .footer-info {
@@ -856,6 +888,7 @@ fieldset {
   margin: 0;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .footer-column-2 {
@@ -894,6 +927,15 @@ fieldset {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer-logo::before {
+  content: "";
+  position: absolute;
+  top: 68px;
+  width: 220px;
+  height: 5px;
+  background-color: #b52933;
 }
 
 .footer-address {
