@@ -39,6 +39,11 @@ section {
   border: 1px solid transparent;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .red-button {
   font: inherit;
   text-align: center;
@@ -305,6 +310,7 @@ section {
 }
 .main-navigation .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   background-color: #32425c;
