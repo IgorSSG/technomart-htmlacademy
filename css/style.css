@@ -583,9 +583,12 @@ img {
 
 .servises {
   padding: 0;
-  padding-top: 65px;
+  padding-top: 55px;
   padding-bottom: 40px;
   background-color: #f4f7f9;
+}
+
+.servises .container {
   position: relative;
 }
 
@@ -641,7 +644,7 @@ img {
   margin: 0;
   position: absolute;
   left: 600px;
-  top: 261px;
+  top: 175px;
 }
 .servises-buttons ul {
   margin: 0;
