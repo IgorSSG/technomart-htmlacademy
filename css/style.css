@@ -523,26 +523,13 @@ img {
 
 .container .main-catalog-list {
   list-style-type: none;
+  width: 100%;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
-.main-catalog-item {
-  width: 220px;
-  border: 1px solid #eaeaea;
-  margin: 0;
-}
-
-.main-catalog-item h3 {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 700;
-  color: #000000;
-  text-align: center;
-}
 
 .popular-manufacturers-name {
   margin-bottom: 20px;
@@ -785,7 +772,6 @@ fieldset {
   margin: 0;
   width: 100%;
   height: 38px;
-
   background-color: #f7f3ec;
   border-radius: 2px;
   display: flex;
@@ -864,6 +850,78 @@ fieldset {
   width: 220px;
   margin: 0;
   padding: 0;
+  margin-bottom: 20px
+}
+
+.sort {
+  width: 700px;
+  height: 38px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  background-color: #f7f3ec;
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+
+.sort h2 {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-right: 140px;
+  margin-left: 20px;
+}
+
+.sort-buttons {
+  width: 380px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+.sort-buttons a {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #EE3643;
+}
+
+.filter-icon-up{
+  margin-right: 20px;
+}
+
+.product-filter fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+.producer-filter-list {
+  margin: 0;
+  padding: 0;
+}
+
+.filter-option {
+  margin-bottom: 20px;
+  padding-left: 35px;
+}
+
+.filter-option input::before {
+  content: "";
+  /* position: absolute; */
+  width: 23px;
+  height: 23px;
+  background-image: url(img/checkbox-off.svg);
+
 }
 
 .product-filter legend {
@@ -873,6 +931,7 @@ fieldset {
   font-weight: bold;
   color: #000000;
   text-transform: uppercase;
+  margin-bottom: 18px;
 }
 
 .product-filter ul {
@@ -902,21 +961,41 @@ fieldset {
   background-color: #ffffff;
 }
 
+.catalog-list {
+  width: 700px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 52px;
+}
+
 .catalog-item {
-  display: inline-block;
-  list-style-type: none;
-  width: 220px;
-  border: 1px solid #e5e5e5;
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  width: 218px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  list-style-type: none;
 }
-.catalog-item h3 {
+.catalog-item-title {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   color: #000000;
   text-align: center;
+  min-height: 40px;
+  padding: 0 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .old-price {
@@ -927,6 +1006,9 @@ fieldset {
   text-decoration: line-through;
   color: #999999;
   text-align: center;
+  min-height: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .price {
@@ -937,7 +1019,170 @@ fieldset {
   color: #ffffff;
   text-align: center;
   background-color: #ee3643;
+  position: relative;
+  width: 80px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  padding: 11px 30px;
+  border-radius: 3px;
 }
+
+.price:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border: 20px solid white;
+  border-left-color: #ee3643;
+}
+
+.catalog-item .actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+  background-color: rgba(255,255,255,0.9);
+  z-index: 10;
+}
+
+.catalog-item .actions .buy,
+.catalog-item .actions .bookmark {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+  background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  border-radius:3px;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Cuprum", Arial, sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.catalog-item .actions .bookmark {
+  color: #32425c;
+  background: white;
+  border-bottom-color: #63a63e;
+}
+
+.catalog-item .flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 60px;
+  height: 60px;
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.catalog-item .flag-new {
+  background: url("../img/new-flag.png") no-repeat 0 0;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.main-catalog-list .main-catalog-item {
+  margin-right: 20px;
+}
+
+.main-catalog-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.catalog-items {
+  font-size: 0;
+}
+
+.catalog-item {
+  font-size: 16px;
+}
+
+.catalog-item .actions {
+  display: none;
+}
+
+.catalog-item:hover .actions {
+  display: block;
+}
+
+.product-pages {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.product-page {
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.product-page a {
+  display: block;
+  width: 36px;
+  max-height: 38px;
+  padding: 9px 0;
+  color: #000000;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.product-page-next a {
+  width: 140px;
+}
+
+.product-page a:hover,
+.product-page a:focus {
+  border: 1px solid #bdc6ca;
+}
+
+.product-page a:active {
+  border: 1px solid #ee3643;
+}
+
+.about-perforators {
+  padding-top: 60px;
+  padding-bottom: 65px;
+  background-color: #f4f7f9;
+}
+
+.about-perforators h2 {
+  font: inherit;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.about-perforators p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 24px;
+  margin: 0;
+}
+/* .product-page a:visited {
+  color: #ffffff;
+  border: 1px solid transparent;
+  background-color: #ee3643;
+} */
 /*MAIN END*/
 
 
