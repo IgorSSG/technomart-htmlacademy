@@ -1386,7 +1386,7 @@ fieldset {
 }
 
 .footer-info {
-  padding-bottom: 40px;
+  padding-bottom: 52px;
 }
 .footer .container {
   display: flex;
@@ -1414,7 +1414,15 @@ fieldset {
   margin: 0;
   padding: 0;
   margin-left: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-navigation,
+.market-navigation {
+  list-style-type: none;
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
 }
 
 .market-navigation {
@@ -1448,17 +1456,13 @@ fieldset {
 }
 
 .footer-address {
-  font-size: 18px;
-  line-height: 1.33;
-  color: #f3f7f9;
-}
-
-.footer-navigation li,
-.market-navigation li{
+  margin: 0;
+  margin-top: 30px;
+  font: inherit;
   font-size: 18px;
   line-height: 24px;
+  font-style: normal;
   color: #f3f7f9;
-  list-style-type: none;
 }
 
 .market-navigation a{
@@ -1472,18 +1476,19 @@ fieldset {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding-top: 17px;
+  padding-bottom: 20px;
 }
 
 .main-footer .container {
   display: flex;
+  justify-content: space-between;
 }
 
 .footer-company {
-  width: 300px;
+  width: 380px;
   margin: 0;
-  margin-right: 90px;
+  margin-right: 10px;
   box-sizing: border-box;
 }
 
@@ -1495,21 +1500,27 @@ fieldset {
 }
 
 .contact-info {
-  width: 310px;
+  width: 300px;
+  box-sizing: border-box;
   margin:auto;
   display: flex;
-  justify-content: space-between;
 }
 
 .footer-feedback,
 .footer-copyright {
+  display: block;
   width: 140px;
   margin:0;
+}
+
+.footer-feedback {
+  margin-right: 53px;
 }
 
 .footer-social ul {
   width: 150px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   list-style-type: none;
