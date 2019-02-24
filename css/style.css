@@ -1,29 +1,7 @@
-@font-face {
-  font-family: "Cuprum";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Cuprum Regular"), local("Cuprum-Regular"),
-       url("fonts/cuprum-v10-latin-regular.woff2") format("woff2"),
-       url("fonts/cuprum-v10-latin-regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Cuprum";
-  font-style: italic;
-  font-weight: normal;
-  src: local("Cuprum Italic"), local("Cuprum-Italic"),
-       url("fonts/cuprum-v10-latin-italic.woff2") format("woff2"),
-       url("fonts/cuprum-v10-latin-italic.woff") format("woff");
-}
-
-header{
-  background-color: #f4f7f9
-}
-
 body {
   margin: 0px;
   padding: 0px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: 'Cuprum', Arial, sans-serif;
   color: #000000;
   font-weight: 400;
   min-width: 1200px;
@@ -42,6 +20,10 @@ section {
 img {
   max-width: 100%;
   height: auto;
+}
+
+header{
+  background-color: #f4f7f9
 }
 
 .red-button {
@@ -455,21 +437,33 @@ img {
 .main-navigation {
   padding-bottom: 60px;
 }
-.main-navigation .container {
+.main-navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: #32425c;
   box-shadow: inset 0px -5px 0 0 #293449;
-
-  min-height: 60px;
 }
 
-.main-navigation a {
+.main-navigation-button {
+  display: block;
+  padding: 21.5px 28px;
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
+  vertical-align: middle;
+}
+
+.main-navigation-item:first-child a {
+  padding-left: 50px;
+}
+
+.main-navigation-item:last-child a{
+  padding-right: 50px;
 }
 
 .main-navigation a:hover,
@@ -480,9 +474,7 @@ img {
   background-color: #293449;
   color: rgba(255, 255, 255, 0.5);
 }
-
 /*HEADER END*/
-
 
 /*MAIN START*/
 .infoblock-section {
