@@ -310,8 +310,8 @@ header{
 
 .contacts {
   margin: 0;
-  margin-right: 20px;
-  width: 300px;
+  margin-right: 50px;
+  width: 270px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -324,9 +324,7 @@ header{
   width: 300px;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
   list-style-type: none;
-  margin: auto;
   box-sizing: border-box;
 }
 
@@ -341,8 +339,37 @@ header{
   height: 45px;
   background-color: #ffffff;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+}
+
+.user-profile-button {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin-left: 47px;
+  margin-right: 39px;
+  font: inherit;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.user-profile-button::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -32px;
+  width: 20px;
+  height: 18px;
+  background-image: url("../img/icon-user.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.user-profile-button:hover::before,
+.user-profile-button:focus::before {
+  opacity: 1;
 }
 
 .user-main-button {
@@ -353,7 +380,6 @@ header{
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
-  cursor: default;
   padding: 12px 0;
 }
 
@@ -378,24 +404,6 @@ header{
   text-align: center;
 }
 
-.user-profile-links {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 210px;
-  margin: 0;
-  padding: 0;
-  margin-top: 8px;
-  padding-left: 20px;
-}
-
-.logout-button {
-  margin: 0;
-  padding: 0;
-  background: none;
-  border: none;
-}
-
 .user-main-button:hover,
 .user-main-button:focus {
   color: #ee3643;
@@ -406,8 +414,7 @@ header{
   opacity: 1;
 }
 
-.login-button:active,
-.registration-button:active {
+.user-main-button:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -415,15 +422,38 @@ header{
   opacity: 0.3;
 }
 
-.user-profile a {
-  font: inherit;
-  font-size: 21px;
-  line-height: 21px;
-  color: #000000;
+.logout-button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  width: 20px;
+  height: 17px;
+  background-image: url("../img/icon-logout.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.logout-button:hover,
+.logout-button:focus {
+  opacity: 1;
+}
+
+.logout-button:active {
+  opacity: 0.3;
 }
 
 .user-profile-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   list-style-type: none;
+  width: 210px;
+  margin: 0;
+  padding: 0;
+  margin-top: 8px;
+  padding-left: 20px;
 }
 
 .user-profile-links a {
@@ -434,9 +464,19 @@ header{
   text-decoration: underline;
 }
 
+.user-profile-links a:hover,
+.user-profile-links a:focus {
+  color: #ee3643;
+}
+
+.user-profile-links a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .main-navigation {
   padding-bottom: 60px;
 }
+
 .main-navigation-list {
   margin: 0;
   padding: 0;
