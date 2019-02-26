@@ -226,19 +226,28 @@ header{
 
 .bookmarks:hover::before,
 .bookmarks:focus::before,
-.bookmarks:active::before,
 .cart:hover::before,
-.cart:focus::before,
-.cart:active::before {
+.cart:focus::before
+{
   opacity: 1;
+}
+
+.bookmarks:active::before,
+.cart:active::before {
+  opacity: 0.3;
 }
 
 .info-section {
   margin-bottom: 40px;
 }
 
-.upper-section-button:hover {
+.upper-section-button:hover,
+.upper-section-button:focus {
   background-color: #212a3a;
+}
+
+.upper-section-button:active {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .cart-catalog {
@@ -533,6 +542,8 @@ background-color: #518534;
 }
 
 .infoblock {
+  display: block;
+  position: relative;
   margin: 0;
   font: inherit;
   font-size: 14px;
@@ -540,6 +551,57 @@ background-color: #518534;
   font-weight: 400;
   color: #ffffff;
   display: flex;
+  align-items: center;
+}
+
+.infoblock .flag {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 60px;
+  height: 59px;
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.infoblock .flag-new {
+  background: url("../img/new-flag.png") no-repeat 0 0;
+}
+
+.infoblock-left-side {
+  margin-left: 23px;
+  display: flex;
+  flex-direction: column;
+}
+
+.infoblock-button {
+  display: block;
+  width: 135px;
+  padding: 10px 0;
+  margin-top: 10px;
+  margin-left: 2px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+}
+.infoblock-button:hover,
+.infoblock-button:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.infoblock-button:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.infoblock-right-side {
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .infoblock h3 {
@@ -548,6 +610,7 @@ background-color: #518534;
   line-height: 30px;
   font-weight: 700;
   color: #ffffff;
+  margin: 0;
 }
 
 .infoblock-section .container {
@@ -1274,6 +1337,27 @@ fieldset {
   border-bottom-color: #63a63e;
 }
 
+.catalog-item .actions .buy:hover {
+  background-color: #5fbb2d;
+  border: 3px solid #5fbb2d;
+  border-bottom-color: #367315;
+}
+
+.catalog-item .actions .buy:active {
+  background-color: #518534;
+  border: 3px solid #518534;
+}
+
+.catalog-item .actions .bookmark:hover {
+  border: 3px solid #32425c;
+}
+
+.catalog-item .actions .bookmark:active {
+  border: 3px solid #32425c;
+  color: #32425c;
+  opacity: 0.3;
+}
+
 .catalog-item .flag {
   position: absolute;
   top: -1px;
@@ -1305,7 +1389,7 @@ fieldset {
   font-size: 0;
 }
 
-.catalog-item {
+.catalog-items {
   font-size: 16px;
 }
 
@@ -1315,6 +1399,10 @@ fieldset {
 
 .catalog-item:hover .actions {
   display: block;
+}
+
+.catalog-item:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .product-pages {
