@@ -667,14 +667,27 @@ background-color: #518534;
 .slider {
   width: 620px;
   height: 266px;
-  border: 1px solid transparent;
   margin: 0;
   margin-top: 20px;
 }
+
+.slider-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-item {
+  display: none;
+}
+
+.slider-item:nth-child(1) {
+  display: block;
+}
+
 .slider .slide-image {
-  position: relative;
-  width: 620px;
-  height: 266px;
+  width: 100%;
+  height: 100%;
 }
 
 .slider h3 {
@@ -724,18 +737,16 @@ background-color: #518534;
 	left: 708px;
 }
 
-.slider-link {
+.slider-link-button {
+  display: block;
+  position: absolute;
+  top: 728px;
+	left: 155px;
   font-size: 14px;
   font-weight: normal;
   line-height: 18px;
-  display: block;
-  position: absolute;
   margin: 0;
   margin-left: 20px;
-	top: 728px;
-	left: 155px;
-}
-.slider-link-button {
   padding: 14px 0;
   padding-left: 49px;
   padding-right: 45px;
