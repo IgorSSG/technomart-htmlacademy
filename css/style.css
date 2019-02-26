@@ -665,6 +665,7 @@ background-color: #518534;
 
 /* СЛАЙДЕР */
 .slider {
+  position: relative;
   width: 620px;
   height: 266px;
   margin: 0;
@@ -691,65 +692,64 @@ background-color: #518534;
 }
 
 .slider h3 {
+  position: absolute;
   font: inherit;
   font-size: 36px;
-  font-weight: bold;
   line-height: 36px;
+  font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
-	position: absolute;
   margin: 0;
-  margin-left: 20px;
-	top: 550px;
-	left: 152px;
+	top: 27px;
+	left: 25px;
 }
 
 .slider p {
+  position: absolute;
   font: inherit;
   font-size: 18px;
-  font-weight: normal;
   line-height: 24px;
+  font-weight: normal;
   color: #ffffff;
-	position: absolute;
   margin: 0;
-  margin-left: 20px;
-	top: 595px;
-	left: 152px;
+	top: 65px;
+	left: 25px;
 }
 
 .last-slide-button {
+  position: absolute;
+  top: 114px;
+	left: 25px;
   background: none;
   border: none;
-  position: absolute;
   margin: 0;
-  margin-left: 20px;
-	top: 636px;
-	left: 155px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #ffffff;
 }
 
 .next-slide-button {
+  position: absolute;
   background: none;
   border: none;
-  position: absolute;
   margin: 0;
   margin-left: 20px;
-	top: 636px;
-	left: 708px;
+	top: 114px;
+	right: 20px;
 }
 
 .slider-link-button {
   display: block;
   position: absolute;
-  top: 728px;
-	left: 155px;
+  top: 206px;
+	left: 25px;
+  width: 195px;
   font-size: 14px;
   font-weight: normal;
   line-height: 18px;
   margin: 0;
-  margin-left: 20px;
   padding: 14px 0;
-  padding-left: 49px;
-  padding-right: 45px;
 }
 
 /* СЛАЙДЕР КОНЕЦ */
@@ -759,25 +759,38 @@ background-color: #518534;
 
 .popular-products-name .container {
   background-color: #f9f5f0;
-  padding: 25px 0;
+  padding: 29.5px 0;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 
 .popular-products-name h2 {
-  width: 380px;
+  max-width: 380px;
   font: inherit;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
   margin: 0;
+  margin-left: 30px;
 }
 
 .popular-products-button {
-  width: 300px;
+  display: block;
+  position: absolute;
+  left: 663px;
+  top: 25px;
+  width: 253px;
   margin: 0;
+  padding: 10px 0;
+  font: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: 400px;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .popular-products {
@@ -800,25 +813,38 @@ background-color: #518534;
 
 .popular-manufacturers-name .container {
   background-color: #f9f5f0;
-  padding: 25px 0;
+  padding: 29.5px 0;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 
 .popular-manufacturers-name h2 {
-  width: 460px;
+  max-width: 380px;
   font: inherit;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
   margin: 0;
+  margin-left: 30px;
 }
 
 .popular-manufacturers-button {
-  width: 300px;
+  display: block;
+  position: absolute;
+  left: 663px;
+  top: 25px;
+  width: 253px;
   margin: 0;
+  padding: 10px 0;
+  font: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: 400px;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .popular-manufacturers {
