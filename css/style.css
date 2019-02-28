@@ -398,6 +398,14 @@ background-color: #518534;
   opacity: 1;
 }
 
+.user-profile-button:active::before {
+  opacity: 0.7;
+}
+
+.user-profile-button:active {
+  opacity: 0.3;
+}
+
 .user-main-button {
   display: block;
   position: relative;
@@ -1294,7 +1302,6 @@ fieldset {
   margin-bottom: 20px;
 }
 
-
 .sort h2 {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -1316,7 +1323,7 @@ fieldset {
   margin-right: 20px;
 }
 
-.sort-buttons a {
+.sort-button {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -1325,7 +1332,34 @@ fieldset {
   border-bottom: 1px dotted #EE3643;
 }
 
-.filter-icon-up{
+.sort-button:hover,
+.sort-button:focus {
+  color: #000000;
+}
+
+.sort-buttons .active {
+  border: none;
+  color: #ee3643;
+}
+
+.filter-icon {
+  opacity: 0.3;
+}
+
+.filter-icon:hover,
+.filter-icon:focus {
+  opacity: 1;
+}
+
+.sort-and-catalog .active {
+  opacity: 1;
+}
+
+.active path {
+  fill: #ee3643;
+}
+
+.filter-icon-up {
   margin-right: 20px;
 }
 
@@ -1334,24 +1368,92 @@ fieldset {
   padding: 0;
 }
 
-.producer-filter-list {
+.producer-filter-list,
+.power-filter-list {
   margin: 0;
   padding: 0;
+  margin-bottom: 20px;
 }
 
 .filter-option {
-  margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.filter-option:last-child {
+  margin-bottom: 0;
+}
+
+.check,
+.radio {
   padding-left: 35px;
 }
 
-.filter-option input::before {
-  content: "";
-  /* position: absolute; */
+.check-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.check-box {
+  position: absolute;
+  top: -3px;
+  left: 0px;
   width: 23px;
   height: 23px;
-  background-image: url(img/checkbox-off.svg);
-
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
 }
+
+.check-box:hover,
+.check-input:focus + .check-box {
+  opacity: 0.5;
+}
+
+.check-input:checked + .check-box {
+  width: 27px;
+  background-image: url(../img/checkbox-on.svg);
+}
+
+.check-input:disabled + .check-box,
+.check-input:disabled + .check-box + span {
+  opacity: 0.1;
+}
+
+.radio-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.radio-button {
+  position: absolute;
+  top: -3px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/radio-off.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.radio-button:hover,
+.radio-input:focus + .radio-button {
+  opacity: 0.5;
+}
+
+.radio-input:checked + .radio-button {
+  background-image: url(../img/radio-on.svg);
+}
+
+.radio-input:disabled + .radio-button,
+.radio-input:disabled + .radio-button + span {
+  opacity: 0.1;
+}
+
 
 .product-filter legend {
   font-family: "PT Sans", Arial, sans-serif;
@@ -1584,7 +1686,7 @@ fieldset {
   box-sizing: border-box;
 }
 
-.product-page a {
+.product-page {
   display: block;
   width: 36px;
   max-height: 38px;
@@ -1596,17 +1698,23 @@ fieldset {
   text-align: center;
 }
 
-.product-page-next a {
+.product-page-next {
   width: 140px;
 }
 
-.product-page a:hover,
-.product-page a:focus {
+.product-page:hover,
+.product-page:focus {
   border: 1px solid #bdc6ca;
 }
 
-.product-page a:active {
+.product-page:active {
   border: 1px solid #ee3643;
+}
+
+.product-pages .active {
+  background-color: #ee3643;
+  color: #ffffff;
+  border: none;
 }
 
 .about-perforators {
