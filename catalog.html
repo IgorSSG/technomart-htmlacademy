@@ -109,28 +109,38 @@
                 <legend>Производители:</legend>
                 <ul class="producer-filter-list">
                   <li class="filter-option">
-                    <label>
-                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="BOSH" checked>BOSH
+                    <label class="check">
+                      <input class="visually-hidden check-input" type="checkbox" name="BOSH" checked>
+                      <span class="check-box"></span>
+                      <span>BOSH</span>
                     </label>
                   </li>
                   <li class="filter-option">
-                    <label>
-                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="ИНТЕРСКОЛ">ИНТЕРСКОЛ
+                    <label class="check">
+                      <input class="visually-hidden check-input" type="checkbox" name="ИНТЕРСКОЛ">
+                      <span class="check-box"></span>
+                      <span>ИНТЕРСКОЛ</span>
                     </label>
                   </li>
                   <li class="filter-option">
-                    <label>
-                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="MAKITA" checked>MAKITA
+                    <label class="check">
+                      <input class="visually-hidden check-input" type="checkbox" name="MAKITA" checked>
+                      <span class="check-box"></span>
+                      <span>MAKITA</span>
                     </label>
                   </li>
                   <li class="filter-option">
-                    <label>
-                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="DEWALT">DEWALT
+                    <label class="check">
+                      <input class="visually-hidden check-input" type="checkbox" name="DEWALT" disabled checked>
+                      <span class="check-box"></span>
+                      <span>DEWALT</span>
                     </label>
                   </li>
                   <li class="filter-option">
-                    <label>
-                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="HITACHI">HITACHI
+                    <label class="check">
+                      <input class="visually-hidden check-input" type="checkbox" name="HITACHI" disabled>
+                      <span class="check-box"></span>
+                      <span>HITACHI</span>
                     </label>
                   </li>
                 </ul>
@@ -140,15 +150,17 @@
                 <legend>Питание:</legend>
                 <ul class="power-filter-list">
                   <li class="filter-option">
-                    <label>
-                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="АККУМУЛЯТОРНЫЕ" checked>
-                    АККУМУЛЯТОРНЫЕ
+                    <label class="radio">
+                      <input class="visually-hidden radio-input" type="radio" name="АККУМУЛЯТОРНЫЕ" checked>
+                      <span class="radio-button"></span>
+                      <span>АККУМУЛЯТОРНЫЕ</span>
                     </label>
                   </li>
                   <li class="filter-option">
-                    <label>
-                      <input class="visually-hidden filter-input filter-input-radio" type="radio" name="СЕТЕВЫЕ">
-                      СЕТЕВЫЕ
+                    <label class="radio">
+                      <input class="visually-hidden radio-input" type="radio" name="СЕТЕВЫЕ" disabled>
+                      <span class="radio-button"></span>
+                      <span>СЕТЕВЫЕ</span>
                     </label>
                   </li>
                 </ul>
@@ -160,12 +172,20 @@
             <section class="sort">
               <h2>Сортировка</h2>
               <ul class="sort-buttons">
-                <li><a class="sort-button sort-button-by-price" href="#">По цене</a></li>
+                <li><a class="sort-button sort-button-by-price active" href="#">По цене</a></li>
                 <li><a class="sort-button sort-button-by-type" href="#">По типу</a></li>
                 <li><a class="sort-button sort-button-by-functionality" href="#">По функциональности</a></li>
               </ul>
-              <a class="filter-icon-up"><img src="img/icon-up-dir.png" alt="стрелка вверх"></a>
-              <a class="filter-icon-down"><img src="img/icon-down-dir.png" alt="стрелка вниз"></a>
+              <a class="filter-icon filter-icon-up active" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path fill="#231F20" d="M5.5 0L0 10h11z"/>
+                </svg>
+              </a>
+              <a class="filter-icon filter-icon-down" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path fill="#231F20" d="M5.5 10L0 0h11"/>
+              </svg>
+              </a>
             </section>
             <section class="catalog">
               <h2 class="visually-hidden">Список товаров</h2>
@@ -265,10 +285,10 @@
                 </li>
               </ul>
               <ul class="product-pages">
-                <li class="product-page product-page-1"><a href="#">1</a></li>
-                <li class="product-page product-page-2"><a href="#">2</a></li>
-                <li class="product-page product-page-3"><a href="#">3</a></li>
-                <li class="product-page product-page-next"><a href="#">Следующая</a></li>
+                <li><a class="product-page product-page-1 active" href="#">1</a></li>
+                <li><a class="product-page product-page-2" href="#">2</a></li>
+                <li><a class="product-page product-page-3" href="#">3</a></li>
+                <li><a class="product-page product-page-next" href="#">Следующая</a></li>
               </ul>
             </section>
           </div>
