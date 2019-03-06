@@ -256,33 +256,6 @@
           <p class="main-text-contacts">Вы можете забрать товар сами,<br>заехав в наш офис:</p>
           <img src="img/map-contacts.jpg" width="300" height="158" alt="Картинка Карты">
           <button class="red-button contact-us-button" type="button">Заблудились? Напишите нам!</button>
-          <div class="modal modal-write-us">
-            <button class="modal-close" type="button" name="modal-close">Закрыть</button>
-            <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-              <div class="form-answer">
-                <label>
-                  <span>Ваше имя:</span>
-                  <br>
-                  <input type="text" name="user-name" placeholder="Имя Фамилия">
-                </label>
-                <label>
-                  <span>Ваш e-mail:</span>
-                  <br>
-                  <input type="email" name="email" placeholder="email@example.com">
-                </label>
-              </div>
-              <div class="form-text-area">
-                <label>
-                  <span>Текст письма:</span>
-                  <br>
-                  <textarea name="letter-text" placeholder="В свободной форме"></textarea>
-                </label>
-              </div>
-              <div class="modal-form-btn">
-                <button class="red-button feedback-button" type="submit" name="feedback-button">Отправить</button>
-              </div>
-            </form>
-          </div>
         </section>
       </div>
     </main>
@@ -339,6 +312,33 @@
         </div>
       </div>
     </footer>
+    <section class="modal modal-write-us">
+      <h2 class="visually-hidden">Напишите нам!</h2>
+      <button class="modal-close" type="button" name="modal-close">Закрыть</button>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form-answer">
+          <div>
+            <label>
+              <h3>Ваше имя:</h3>
+              <input type="text" name="user-name" placeholder="Имя Фамилия">
+            </label>
+          </div>
+          <div>
+            <label>
+              <h3>Ваш e-mail:</h3>
+              <input type="email" name="email" placeholder="email@example.com">
+            </label>
+          </div>
+        </div>
+        <div class="form-text-area">
+          <label>
+            <h3>Текст письма:</h3>
+            <textarea name="letter-text" placeholder="В свободной форме"></textarea>
+          </label>
+        </div>
+        <button class="red-button feedback-button" type="submit" name="feedback-button">Отправить</button>
+      </form>
+    </section>
     <section class="modal modal-map">
       <button class="modal-close" type="button" name="modal-close">Закрыть</button>
       <h2 class="visually-hidden">Как проехать</h2>
