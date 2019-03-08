@@ -704,12 +704,12 @@ background-color: #518534;
   padding: 0;
 }
 
-.slider-item {
-  display: none;
+.slide-on {
+  display: block;
 }
 
-.slider-item:nth-child(1) {
-  display: block;
+.slide-off {
+  display: none;
 }
 
 .slider .slide-image {
@@ -753,6 +753,7 @@ background-color: #518534;
   line-height: 18px;
   font-weight: normal;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .next-slide-button {
@@ -763,6 +764,7 @@ background-color: #518534;
   margin-left: 20px;
 	top: 114px;
 	right: 20px;
+  cursor: pointer;
 }
 
 .slider-link-button {
@@ -779,6 +781,7 @@ background-color: #518534;
 }
 
 /* СЛАЙДЕР КОНЕЦ */
+
 .popular-products-name {
   margin-bottom: 21px;
 }

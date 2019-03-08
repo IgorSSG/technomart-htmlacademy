@@ -2,8 +2,6 @@ var contactUs = document.querySelector(".contact-us-button");
 var popupWriteUs = document.querySelector(".modal-write-us");
 var close = popupWriteUs.querySelector(".modal-close");
 
-
-
 var form = popupWriteUs.querySelector(".feedback-form");
 var yourName = popupWriteUs.querySelector("[name=name]");
 var yourEmail = popupWriteUs.querySelector("[name=email]");
