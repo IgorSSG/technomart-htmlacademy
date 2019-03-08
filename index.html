@@ -230,12 +230,32 @@
                 <li><button class="servises-button credit-button" type="button" name="credit">Кредит</button></li>
               </ul>
             </div>
-            <div class="servises-info">
-              <h3>Доставка</h3>
-              <p>Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!</p>
-              <p>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
-            </div>
-            <img class="servises-picture" src="img/ship.png" width="468" height="261" alt="Автомобиль доставки">
+            <ul class="servises-info">
+              <li class="servises-info-item servises-ship">
+                <h3>Доставка</h3>
+                <p>Мы с удовольствием доставим ваш товар прямо<br>
+                  к вашему подъезду совершенно бесплатно!</p>
+                <p>Ведь мы неплохо заработаем,<br>
+                  поднимая его на ваш этаж!</p>
+                <img class="servises-picture-car" src="img/ship.png" width="468" height="261" alt="Автомобиль доставки">
+              </li>
+              <li class="servises-info-item servises-garanty hide-service">
+                <h3>Гарантия</h3>
+                <p>Если купленный у нас товар поломается или заискрит,<br>
+                  а также в случае пожара, спровоцированного его возгаранием,<br>
+                  вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+                  сгоревший товар на новый.</p>
+                <p>Дом уж восстановите как-нибудь сами.</p>
+                <img class="servises-picture-garanty" src="img/garanty.png" width="389" height="283" alt="Медаль">
+              </li>
+              <li class="servises-info-item servises-credit hide-service">
+                <h3>Кредит</h3>
+                <p>Залезть в долговую яму стало проще!</p>
+                <p>Кредитные консультанты придут вам на помощь.</p>
+                <button class="red-button credit-button"type="button" name="credit-button">Отправить заявку</button>
+                <img class="servises-picture-credit" src="img/credit.png" width="465" height="285" alt="Купюры">
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -346,5 +366,6 @@
     </section>
     <script src="js/popups.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/services.js"></script>
   </body>
 </html>
