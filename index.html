@@ -19,7 +19,7 @@
           <div class="search-section">
             <form action="#" method="get" enctype="multipart/form-data">
               <input id="search" type="search" name="main-search" placeholder="Поиск:">
-              <label class="search-label"for="search"></label>
+              <label class="search-label" for="search"></label>
             </form>
           </div>
           <ul class="user-instruments">
@@ -108,13 +108,13 @@
               <button class="slide-button next-slide-button" type="button" name="next-slide"><img src="img/icon-right.png" width="22" height="40" alt="стрелка вправо"></button>
             </div>
             <ul class="slider-list">
-              <li class="slider-item">
+              <li class="slide-on">
                 <img class="slide-image" src="img/drill.jpg" width="620" height="266" alt="Мужик с дрелью">
                 <h3>Дрели</h3>
                 <p>Соседям на радость!</p>
                 <a class="red-button slider-link-button" href="drills.html">Открыть каталог</a>
               </li>
-              <li class="slider-item">
+              <li class="slide-off">
                 <img class="slide-image" src="img/perf.jpg" width="620" height="266" alt="Мужик с перфоратором">
                 <h3>Перфораторы</h3>
                 <p>Настоящие мужские игрушки</p>
@@ -159,7 +159,7 @@
                 <a href="#" class="buy">Купить</a>
                 <a href="#" class="bookmark">В закладки</a>
               </div>
-              <div class="catalog-item-image"><img width="218" height="168" src="img/bosh-bfg-9000.jpg"></div>
+              <div class="catalog-item-image"><img width="218" height="168" src="img/bosh-bfg-9000.jpg" alt="Товар"></div>
               <div class="catalog-item-title">Перфоратор BOSCH BFG 9000</div>
               <div class="old-price">32500 Р.</div>
               <div class="price">25500 Р.</div>
@@ -169,7 +169,7 @@
                 <a href="#" class="buy">Купить</a>
                 <a href="#" class="bookmark">В закладки</a>
               </div>
-              <div class="catalog-item-image"><img width="218" height="168" src="img/bosh-bfg-3000.jpg"></div>
+              <div class="catalog-item-image"><img width="218" height="168" src="img/bosh-bfg-3000.jpg" alt="Товар"></div>
               <div class="catalog-item-title">Перфоратор BOSCH BFG 3000</div>
               <div class="old-price">22500 Р.</div>
               <div class="price">15500 Р.</div>
@@ -179,7 +179,7 @@
                 <a href="#" class="buy">Купить</a>
                 <a href="#" class="bookmark">В закладки</a>
               </div>
-              <div class="catalog-item-image"><img width="218" height="168" src="img/bosh-bfg-6000.jpg"></div>
+              <div class="catalog-item-image"><img width="218" height="168" src="img/bosh-bfg-6000.jpg" alt="Товар"></div>
               <div class="catalog-item-title">Перфоратор BOSCH BFG 6000</div>
               <div class="old-price">30500 Р.</div>
               <div class="price">25500 Р.</div>
@@ -190,7 +190,7 @@
                 <a href="#" class="buy">Купить</a>
                 <a href="#" class="bookmark">В закладки</a>
               </div>
-              <div class="catalog-item-image"><img width="218" height="168" src="img/bosh-bfg-2000.jpg"></div>
+              <div class="catalog-item-image"><img width="218" height="168" src="img/bosh-bfg-2000.jpg" alt="Товар"></div>
               <div class="catalog-item-title">Перфоратор BOSCH BFG 2000</div>
               <div class="old-price"></div>
               <div class="price">12500 Р.</div>
@@ -217,25 +217,46 @@
           <a class="manufacturer-link" href="#"><img src="img/metabo.png" width="204" height="69" alt="metabo"></a>
         </div>
       </section>
-      <section class="servises">
+      <section class="services">
         <div class="container">
           <h2>Сервисы</h2>
-          <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
-          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
+          <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="index-columns">
-            <div class="servises-buttons">
+            <div class="services-buttons">
               <ul>
-                <li><button class="servises-button ship-button active" type="button" name="ship">Доставка</button></li>
-                <li><button class="servises-button warranty-button" type="button" name="warranty">Гарантия</button></li>
-                <li><button class="servises-button credit-button" type="button" name="credit">Кредит</button></li>
+                <li><button class="services-button ship-button active" type="button" name="ship">Доставка</button></li>
+                <li><button class="services-button warranty-button" type="button" name="warranty">Гарантия</button></li>
+                <li><button class="services-button credit-button" type="button" name="credit">Кредит</button></li>
               </ul>
             </div>
-            <div class="servises-info">
-              <h3>Доставка</h3>
-              <p>Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!</p>
-              <p>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
-            </div>
-            <img class="servises-picture" src="img/ship.png" width="468" height="261" alt="Автомобиль доставки">
+            <ul class="services-info">
+              <li class="services-ship services-show">
+                <h3>Доставка</h3>
+                <p>Мы с удовольствием доставим ваш товар прямо<br>
+                  к вашему подъезду совершенно бесплатно!</p>
+                <p>Ведь мы неплохо заработаем,<br>
+                  поднимая его на ваш этаж!</p>
+                <img class="services-picture-car" src="img/ship.png" width="468" height="261" alt="Автомобиль доставки">
+              </li>
+              <li class="services-garanty hide-service">
+                <h3>Гарантия</h3>
+                <p>Если купленный у нас товар поломается или заискрит,<br>
+                  а также в случае пожара, спровоцированного его<br>
+                  возгаранием, вы всегда можете быть уверены<br>
+                  в нашей гарантии. Мы обменяем сгоревший товар на<br>
+                  новый.</p>
+                <p>Дом уж восстановите как-нибудь сами.</p>
+                <img class="services-picture-garanty" src="img/garanty.png" width="389" height="283" alt="Медаль">
+              </li>
+              <li class="services-credit hide-service">
+                <h3>Кредит</h3>
+                <p>Залезть в долговую яму стало проще!</p>
+                <p>Кредитные консультанты придут вам на помощь.</p>
+                <button class="red-button credit-button-1" type="button" name="credit-button">Отправить заявку</button>
+                <img class="services-picture-credit" src="img/credit.png" width="465" height="285" alt="Купюры">
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -254,35 +275,8 @@
         <section class="contacts-info">
           <h2>Контакты</h2>
           <p class="main-text-contacts">Вы можете забрать товар сами,<br>заехав в наш офис:</p>
-          <img src="img/map-contacts.jpg" width="300" height="158" alt="Картинка Карты">
+          <button class="map-button" type="button"></button>
           <button class="red-button contact-us-button" type="button">Заблудились? Напишите нам!</button>
-          <div class="modal modal-write-us">
-            <button class="modal-close" type="button" name="modal-close">Закрыть</button>
-            <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-              <div class="form-answer">
-                <label>
-                  <span>Ваше имя:</span>
-                  <br>
-                  <input type="text" name="user-name" placeholder="Имя Фамилия">
-                </label>
-                <label>
-                  <span>Ваш e-mail:</span>
-                  <br>
-                  <input type="email" name="email" placeholder="email@example.com">
-                </label>
-              </div>
-              <div class="form-text-area">
-                <label>
-                  <span>Текст письма:</span>
-                  <br>
-                  <textarea name="letter-text" placeholder="В свободной форме"></textarea>
-                </label>
-              </div>
-              <div class="modal-form-btn">
-                <button class="red-button feedback-button" type="submit" name="feedback-button">Отправить</button>
-              </div>
-            </form>
-          </div>
         </section>
       </div>
     </main>
@@ -339,10 +333,40 @@
         </div>
       </div>
     </footer>
+    <section class="modal modal-write-us">
+      <h2 class="visually-hidden">Напишите нам!</h2>
+      <button class="modal-close" type="button" name="modal-close">Закрыть</button>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form-answer">
+          <div>
+            <h3>Ваше имя:</h3>
+            <label>
+              <input type="text" name="name" placeholder="Имя Фамилия">
+            </label>
+          </div>
+          <div>
+            <h3>Ваш e-mail:</h3>
+            <label>
+              <input type="email" name="email" placeholder="email@example.com">
+            </label>
+          </div>
+        </div>
+        <div class="form-text-area">
+          <h3>Текст письма:</h3>
+          <label>
+            <textarea name="letter-text" placeholder="В свободной форме"></textarea>
+          </label>
+        </div>
+        <button class="red-button feedback-button" type="submit" name="feedback-button">Отправить</button>
+      </form>
+    </section>
     <section class="modal modal-map">
       <button class="modal-close" type="button" name="modal-close">Закрыть</button>
       <h2 class="visually-hidden">Как проехать</h2>
       <img src="img/map-popup.jpg" width="1736" height="779" alt="Большая картинка карты">
     </section>
+    <script src="js/popups.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/services.js"></script>
   </body>
 </html>
