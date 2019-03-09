@@ -1,34 +1,42 @@
-var ship = document.querySelector(".ship-button");
-var warranty = document.querySelector(".warranty-button");
-var credit = document.querySelector(".credit-button");
-var shipShow = document.querySelector(".servises-info-ship");
-var warrantyShow = document.querySelector(".servises-garanty");
-var creditShow = document.querySelector(".servises-credit");
+var shipButton = document.querySelector(".ship-button");
+var warrantyButton = document.querySelector(".warranty-button");
+var creditButton = document.querySelector(".credit-button");
+var shipSlide = document.querySelector(".services-ship");
+var warrantySlide = document.querySelector(".services-garanty");
+var creditSlide = document.querySelector(".services-credit");
 
-// ship.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   shipShow.classList.remove("hide-service");
-//   warrantyShow.clasList.add("hide-service");
-//   creditShow.clasList.add("hide-service");
-//   ship.classList.add("active");
-//   warranty.classList.remove("active");
-//   credit.classList.remove("active");
-// });
-
-warranty.addEventListener("click", function (evt) {
+shipButton.addEventListener("click", function (evt) {
   evt.preventDefault();
-  warrantyShow.classList.remove("hide-service");
-  shipShow.clasList.add("hide-service");
-  creditShow.clasList.add("hide-service");
-  ship.classList.remove("active");
+  shipButton.classList.add("active");
+  warrantyButton.classList.remove("active");
+  creditButton.classList.remove("active");
+
+  shipSlide.classList.add("services-show");
+  shipSlide.classList.remove("hide-service");
+  warrantySlide.classList.add("hide-service");
+  creditSlide.classList.add("hide-service");
 });
 
-// credit.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   creditShow.classList.remove("hide-service");
-//   warrantyShow.clasList.add("hide-service");
-//   shipShow.clasList.add("hide-service");
-//   credit.classList.add("active");
-//   ship.classList.remove("active");
-//   warranty.classList.remove("active");
-// });
+warrantyButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  warrantyButton.classList.add("active");
+  shipButton.classList.remove("active");
+  creditButton.classList.remove("active");
+
+  warrantySlide.classList.add("services-show");
+  warrantySlide.classList.remove("hide-service");
+  shipSlide.classList.add("hide-service");
+  creditSlide.classList.add("hide-service");
+});
+
+creditButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  creditButton.classList.add("active");
+  shipButton.classList.remove("active");
+  warrantyButton.classList.remove("active");
+
+  creditSlide.classList.add("services-show");
+  creditSlide.classList.remove("hide-service");
+  shipSlide.classList.add("hide-service");
+  warrantySlide.classList.add("hide-service");
+});

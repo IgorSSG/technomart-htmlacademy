@@ -914,18 +914,13 @@ opacity: 0.3;
 box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
-.servises {
-  padding: 0;
+.services {
+  position: relative;
   padding-top: 65px;
-  padding-bottom: 100px;
   background-color: #f4f7f9;
 }
 
-.servises .container {
-  position: relative;
-}
-
-.servises h2 {
+.services h2 {
   font: inherit;
   font-size: 30px;
   line-height: 30px;
@@ -934,7 +929,7 @@ box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
   margin-bottom: 30px;
 }
 
-.servises p {
+.services p {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -942,19 +937,20 @@ box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
   margin: 0;
 }
 
-.servises .index-columns{
-  margin-top: 70px;
+.services .index-columns{
+  min-height: 285px;
+  margin-top: 75px;
   display: flex;
 }
 
-.servises-buttons {
+.services-buttons {
   position: relative;
   margin: 0;
   width: 240px;
   margin-right: 80px;
 }
 
-.servises-buttons ul::before {
+.services-buttons ul::before {
   content: "";
   position: absolute;
   top: -48px;
@@ -967,7 +963,7 @@ box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
   z-index: 20;
 }
 
-.servises-button {
+.services-button {
   display: block;
   width: 240px;
   padding: 15.5px 0;
@@ -986,19 +982,19 @@ box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
   outline: none;
 }
 
-.servises-button:hover,
-.servises-button:focus {
+.services-button:hover,
+.services-button:focus {
   box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
   background-color: #293449;
 }
 
-.servises-buttons .active {
+.services-buttons .active {
   background-color: #ffffff;
   color: #32425c;
   box-shadow: none;
 }
 
-.servises h3 {
+.services h3 {
   font: inherit;
   font-size: 36px;
   line-height: 36px;
@@ -1007,7 +1003,7 @@ box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
   margin: 0;
 }
 
-.servises-info {
+.services-info {
   margin: 0;
   padding: 0;
   max-width: 450px;
@@ -1015,29 +1011,29 @@ box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
   box-sizing: border-box;
 }
 
-.servises-info h3 {
-  margin-bottom: 35px;
+.services-info h3 {
+  margin-bottom: 20px;
 }
 
-.servises-picture-car {
+.services-picture-car {
   position: absolute;
-  left: 600px;
-  top: 175px;
+  bottom: 0px;
+  right: 359px;
 }
 
-.servises-picture-garanty {
+.services-picture-garanty {
   position: absolute;
-  left: 690px;
-  top: 175px;
+  bottom: 0px;
+  right: 355.5px;
 }
 
-.servises-picture-credit {
+.services-picture-credit {
   position: absolute;
-  left: 615px;
-  top: 175px;
+  bottom: 0px;
+  right: 357.5px;
 }
 
-.servises-info-item {
+.services-show {
   display: block;
 }
 
@@ -1045,10 +1041,15 @@ box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
   display: none;
 }
 
-.servises-buttons ul {
+.services-buttons ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.credit-button-1 {
+  width: 195px;
+  margin-top: 30px;
 }
 
 .catalog-navigation {
