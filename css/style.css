@@ -593,7 +593,7 @@ background-color: #518534;
 /*MAIN START*/
 .infoblock-section {
   padding-top: 60px;
-  margin-bottom: 52px;
+  padding-bottom: 48px;
   border: none;
 }
 
@@ -681,14 +681,31 @@ background-color: #518534;
   margin: 0;
 }
 
-.infoblock-section .container {
+.product-blocks {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+}
+
+.product-blocks .infoblock {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.product-blocks .infoblock:nth-child(3n) {
+  margin-right: 0;
+}
+
+.fiture-blocks {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 }
 
 .product-block-materials {
@@ -733,19 +750,23 @@ background-color: #518534;
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin-left: 10px;
-  margin-top: 20px;
-  height: 266px;
+  min-height: 270px;
+}
+
+.sevise-blocks .infoblock {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.sevise-blocks .infoblock:last-of-type {
+  margin-bottom: 0;
 }
 
 /* СЛАЙДЕР */
 .slider {
   position: relative;
   width: 620px;
-  height: 266px;
   margin: 0;
-  margin-top: 20px;
 }
 
 .slider-list {
@@ -885,12 +906,12 @@ background-color: #518534;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   width: 100%;
   margin: 0;
   padding: 0;
 }
-
 
 .popular-manufacturers-name {
   margin-bottom: 20px;
@@ -937,7 +958,7 @@ background-color: #518534;
 }
 
 .popular-manufacturers {
-  margin-bottom: 85px;
+  margin-bottom: 65px;
 }
 
 .popular-manufacturers .container {
@@ -947,16 +968,9 @@ background-color: #518534;
   display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: space-between;
-  height: 310px;
+  min-height: 310px;
 }
 
-.popular-manufacturers img {
-  display: block;
-  margin: auto;
-}
 .manufacturer-link {
   display: -webkit-box;
   display: -moz-box;
@@ -965,11 +979,21 @@ background-color: #518534;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  width: 220px;
-  height: 145px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  width: 218px;
+  height: 143px;
   border: 1px solid #eaeaea;
   outline: none;
+}
+
+.manufacturer-link:nth-child(4n) {
+  margin-right: 0;
+}
+
+.popular-manufacturers img {
+  display: block;
+  margin: auto;
 }
 
 .manufacturer-link:hover,
@@ -1090,7 +1114,7 @@ box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 .services-picture-car {
   position: absolute;
   bottom: 0px;
-  right: 362px;
+  right: 370px;
 }
 
 .services-picture-garanty {
@@ -1146,6 +1170,7 @@ box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
   color: #000000;
   text-transform: uppercase;
 }
+
 .flex-container {
   display: -webkit-box;
   display: -moz-box;
@@ -1177,16 +1202,9 @@ box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
 .our-company {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
   border: none;
   margin: 0;
   width: 560px;
-  height: 375px;
 }
 
 .our-company h2 {
@@ -1250,12 +1268,6 @@ box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
 .contacts-info {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
   border: none;
   position: relative;
   margin: 0;
@@ -1272,6 +1284,10 @@ box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 
 .contacts-info p {
   margin-bottom: 31px;
+}
+
+.contacts-info a {
+  display: block;
 }
 
 .map-button {
