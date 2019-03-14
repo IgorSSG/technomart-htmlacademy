@@ -147,3 +147,11 @@ lastSliderButton.addEventListener("click", function (evt) {
   slide1.classList.add("slide-on");
   slide1.classList.remove("slide-off");
 });
+
+var buy = document.querySelector(".buy");
+var cartPlus = document.querySelector(".modal-cart-plus");
+
+buy.addEventListener("clic", function (evt) {
+  evt.preventDefault();
+  cartPlus.classList.add("modal-show");
+});
