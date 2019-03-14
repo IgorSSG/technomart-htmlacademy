@@ -205,6 +205,11 @@ header{
   justify-content: flex-end;
   box-sizing: border-box;
 }
+.upper-section input,
+.upper-section a,
+.upper-section button {
+  outline: none;
+}
 
 .upper-section-button {
   display: block;
@@ -308,6 +313,11 @@ background-color: #518534;
   border: 2px solid #ffffff;
   padding: 10px 0;
   margin-bottom: 8px;
+  outline: none;
+}
+
+.phone-button:focus {
+  border: 2px solid #ee3643;
 }
 
 .phone-button span {
@@ -408,6 +418,7 @@ background-color: #518534;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
+  outline: none;
 }
 
 .user-profile-button::before {
@@ -445,6 +456,7 @@ background-color: #518534;
   color: #000000;
   background-color: #ffffff;
   padding: 12px 0;
+  outline: none;
 }
 
 .login-button {
@@ -498,6 +510,8 @@ background-color: #518534;
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
+  cursor: pointer;
+  outline: none;
 }
 
 .logout-button:hover,
@@ -531,6 +545,7 @@ background-color: #518534;
   line-height: 18px;
   color: #32425c;
   text-decoration: underline;
+  outline: none;
 }
 
 .user-profile-links a:hover,
@@ -569,6 +584,7 @@ background-color: #518534;
   line-height: 17px;
   color: #ffffff;
   vertical-align: middle;
+  outline: none;
 }
 
 .main-navigation-item:first-child a {
@@ -648,6 +664,7 @@ background-color: #518534;
   color: #ffffff;
   border: none;
   border-radius: 2px;
+  outline: none;
 }
 .infoblock-button:hover,
 .infoblock-button:focus {
@@ -1518,6 +1535,7 @@ fieldset {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #EE3643;
+  outline: none;
 }
 
 .sort-button:hover,
@@ -1901,6 +1919,7 @@ fieldset {
   border-radius: 2px;
   vertical-align: middle;
   text-align: center;
+  outline: none;
 }
 
 .product-page-next {
@@ -2030,6 +2049,11 @@ fieldset {
   margin-left: 40px;
 }
 
+.footer-navigation a,
+.market-navigation a {
+  outline: none;
+}
+
 .footer-navigation a:hover,
 .market-navigation a:hover,
 .footer-navigation a:focus,
@@ -2057,15 +2081,35 @@ fieldset {
   width: 220px;
   height: 63px;
   background-color: #ee3643;
+  outline: none;
 }
 
 .footer-logo::before {
   content: "";
   position: absolute;
+  left: 0;
   top: 63px;
   width: 220px;
   height: 5px;
   background-color: #b52933;
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+  background-color: #ca2c37;
+}
+
+.footer-logo:active {
+  background-color: #ba2732;
+}
+
+.footer-logo:hover::before,
+.footer-logo:focus::before {
+  background-color: #992129;
+}
+
+.footer-logo:active::before {
+  background-color: #8D1D26;
 }
 
 .footer-address {
@@ -2155,7 +2199,7 @@ fieldset {
   padding-top: 14px;
 }
 
-.footer-social a {
+.social-button {
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -2165,10 +2209,12 @@ fieldset {
   background-color: #212a3a;
   cursor: pointer;
   vertical-align: middle;
+  outline: none;
 }
-.footer-social a:hover,
-.footer-social a:focus,
-.footer-social a:active {
+
+.social-button:hover,
+.social-button:focus,
+.social-button:active {
   background-color: #ee3643;
 }
 
@@ -2187,6 +2233,7 @@ fieldset {
 .footer-link {
   font: inherit;
   color: #ffd180;
+  outline: none;
 }
 
 .footer-link:hover,
