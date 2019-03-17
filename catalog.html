@@ -98,13 +98,21 @@
             </div>
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
               <h3 class="price-counter">Цена:</h3>
-              <div class="price-rage">
-                <span class="price-rage-detector"></span>
-              </div>
-              <div class="price-values">
-                <input type="text" name="price-from" value="0">
-                <div class="defice"><span>-</span></div>
-                <input type="text" name="price-for" value="30000">
+              <div class="filter-range-slider">
+                <div class="price-range">
+                  <div class="ui-slider-controls-block">
+                    <div class="slider-filter-bar slider-filter-bar-0" style="position: absolute; left: 160px; right: 0px;"></div>
+                    <div class="slider-filter-bar slider-filter-bar-1" style="position: absolute; left: 0px; right: 30px;"></div>
+                    <div class="slider-filter-bar slider-filter-bar-2" style="position: absolute; left: 0px; right: 160px;"></div>
+                    <div class="range-handle range-handle-lower" role="slider" aria-valuenow="0" aria-valuemin="0" aria-valuemax="40000" style="position: absolute; z-index: 2; left:0px;"></div>
+                    <div class="range-handle range-handle-upper" role="slider" aria-valuenow="30000" aria-valuemin="0" aria-valuemax="40000" style="position: absolute; z-index: 1; left:140px;"></div>
+                  </div>
+                </div>
+                <div class="price-values">
+                  <input type="text" name="price-from" value="0">
+                  <div class="defice"><span>-</span></div>
+                  <input type="text" name="price-for" value="30000">
+                </div>
               </div>
               <hr  class="filter-line">
               <fieldset class="manufacturers-filter">

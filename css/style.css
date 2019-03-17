@@ -1381,7 +1381,7 @@ fieldset {
   display: flex;
 }
 
-.product-filter{
+.product-filter {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -1424,10 +1424,6 @@ fieldset {
   padding-left: 18px;
 }
 
-.filter {
-
-}
-
 .price-counter {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
@@ -1440,7 +1436,8 @@ fieldset {
   margin-bottom: 13px;
 }
 
-.price-rage {
+.price-range {
+  position: relative;
   width: 220px;
   height: 78px;
   margin: 0;
@@ -1449,7 +1446,55 @@ fieldset {
   margin-bottom: 10px;
   background-color: #f7f3ec;
   border-radius: 2px;
+  border: none;
 }
+
+.ui-slider-controls-block {
+  position: absolute;
+  display: block;
+  top: 28px;
+  left: 20px;
+  width: 180px;
+  height: 20px;
+}
+/* ------------------- */
+
+.range-handle {
+  top: 2px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0px 1.5px 0 0 rgba(41, 52, 73, 0.1);
+}
+
+.range-handle::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #d7dcde;
+  border-radius: 50%;
+}
+
+.slider-filter-bar {
+  height: 2px;
+  top: 11px
+}
+
+.slider-filter-bar-1 {
+  background-color: #00ca74;
+}
+
+.slider-filter-bar-0,
+.slider-filter-bar-2 {
+  background-color: #d7dcde;
+}
+/* ------------------- */
 
 .price-values {
   display: -webkit-box;
@@ -1460,6 +1505,11 @@ fieldset {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
+}
+
+.connects {
+  display: block;
+  position: relative;
 }
 
 .price-values input {
