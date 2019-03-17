@@ -167,7 +167,7 @@ header{
   height:20px;
   background:url(../img/sprite.png) no-repeat;
   background-position:-106px -1px;
-  cursor:pointer
+  cursor:pointer;
 }
 
 .search-section input:hover{
@@ -873,7 +873,7 @@ background-color: #518534;
 }
 
 .popular-products-name {
-  margin-bottom: 21px;
+  margin-bottom: 18px;
 }
 
 .popular-products-name .container {
@@ -1164,6 +1164,10 @@ box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
   margin-top: 30px;
 }
 
+.catalog-navigation-section{
+  border: none;
+}
+
 .catalog-navigation {
   display: -webkit-box;
   display: -moz-box;
@@ -1339,7 +1343,8 @@ box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
 .product-name {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  border: none solid #000;
 }
 
 .product-name .container {
@@ -1356,7 +1361,7 @@ box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
   padding: 0;
   padding-top: 23px;
   padding-bottom: 22px;
-  padding-left: 30px;
+  padding-left: 28px;
   background-color: #f2f6f8;
 }
 
@@ -1431,7 +1436,8 @@ fieldset {
   color: #000000;
   text-transform: uppercase;
   padding: 0;
-  margin: 20px 0;
+  margin: 12px 0;
+  margin-bottom: 13px;
 }
 
 .price-rage {
@@ -1453,7 +1459,7 @@ fieldset {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .price-values input {
@@ -1484,7 +1490,7 @@ fieldset {
   width: 220px;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px
+  margin-bottom: 17px
 }
 
 .sort {
@@ -1583,7 +1589,7 @@ fieldset {
 
 .filter-option {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .filter-option:last-child {
@@ -1668,7 +1674,7 @@ fieldset {
   font-weight: bold;
   color: #000000;
   text-transform: uppercase;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 
 .product-filter ul {
@@ -1696,6 +1702,11 @@ fieldset {
   border: 1px solid #e5e5e5;
   border-radius: 2px;
   background-color: #ffffff;
+  margin-top: 56px;
+}
+
+.catalog {
+  border: none;
 }
 
 .catalog-list {
@@ -1709,7 +1720,7 @@ fieldset {
   width: 700px;
   margin: 0;
   padding: 0;
-  margin-bottom: 52px;
+  margin-bottom: 32px;
 }
 
 .catalog-item {
@@ -1718,7 +1729,7 @@ fieldset {
   display: inline-block;
   width: 218px;
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   line-height: 20px;
   font-weight: bold;
   text-align: center;
@@ -1728,7 +1739,7 @@ fieldset {
 }
 
 .catalog-item-image {
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
 .catalog-item-title {
@@ -1811,6 +1822,7 @@ fieldset {
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
+  outline: none;
 }
 
 .catalog-item .actions .bookmark {
@@ -1819,7 +1831,8 @@ fieldset {
   border-bottom-color: #63a63e;
 }
 
-.catalog-item .actions .buy:hover {
+.catalog-item .actions .buy:hover,
+.catalog-item .actions .buy:focus {
   background-color: #5fbb2d;
   border: 3px solid #5fbb2d;
   border-bottom-color: #367315;
@@ -1830,7 +1843,8 @@ fieldset {
   border: 3px solid #518534;
 }
 
-.catalog-item .actions .bookmark:hover {
+.catalog-item .actions .bookmark:hover,
+.catalog-item .actions .bookmark:focus {
   border: 3px solid #32425c;
 }
 
@@ -1905,25 +1919,23 @@ fieldset {
 }
 
 .product-page {
+  display: block;
+  width: 38px;
+  max-height: 38px;
+  padding: 10px 0;
+  color: #000000;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  vertical-align: middle;
+  text-align: center;
+  outline: none;
   margin-right: 10px;
   box-sizing: border-box;
 }
 
-.product-page {
-  display: block;
-  width: 36px;
-  max-height: 38px;
-  padding: 9px 0;
-  color: #000000;
-  border: 1px solid #e5e5e5;
-  border-radius: 2px;
-  vertical-align: middle;
-  text-align: center;
-  outline: none;
-}
-
 .product-page-next {
   width: 140px;
+  text-transform: uppercase;
 }
 
 .product-page:hover,
@@ -1938,12 +1950,12 @@ fieldset {
 .product-pages .active {
   background-color: #ee3643;
   color: #ffffff;
-  border: none;
+  border-color: transparent;
 }
 
 .about-perforators {
-  padding-top: 60px;
-  padding-bottom: 65px;
+  padding-top: 64px;
+  padding-bottom: 67px;
   background-color: #f4f7f9;
 }
 
@@ -1954,7 +1966,7 @@ fieldset {
   line-height: 30px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 }
 
 .about-perforators p {
@@ -1964,11 +1976,7 @@ fieldset {
   line-height: 24px;
   margin: 0;
 }
-/* .product-page a:visited {
-  color: #ffffff;
-  border: 1px solid transparent;
-  background-color: #ee3643;
-} */
+
 /*MAIN END*/
 
 
@@ -1980,8 +1988,9 @@ fieldset {
 }
 
 .footer-info {
-  padding-bottom: 52px;
+  padding-bottom: 50px;
 }
+
 .footer .container {
   display: -webkit-box;
   display: -moz-box;
@@ -2114,7 +2123,8 @@ fieldset {
 
 .footer-address {
   margin: 0;
-  margin-top: 30px;
+  margin-top: 33px;
+  margin-left: 3px;
   font: inherit;
   font-size: 18px;
   line-height: 24px;
@@ -2196,7 +2206,7 @@ fieldset {
   list-style-type: none;
   margin:0;
   padding: 0;
-  padding-top: 14px;
+  padding-top: 13px;
 }
 
 .social-button {
@@ -2390,6 +2400,7 @@ fieldset {
   border: 0;
   cursor: pointer;
   background-color: none;
+  outline: none;
 }
 
 .modal-close::before,
@@ -2411,6 +2422,18 @@ fieldset {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+
+.modal-close:hover::before,
+.modal-close:hover::after,
+.modal-close:focus::before,
+.modal-close:focus::after {
+  background-color: #ca2c37;
+}
+
+.modal-close:active::before,
+.modal-close:active::after {
+  background-color: #ba2732;
 }
 
 .modal-write-us h3 {
@@ -2436,6 +2459,7 @@ fieldset {
   background-color: #ffffff;
   border: 2px solid #dee3e4;
   border-radius: 2px;
+  outline: none;
 }
 
 .modal-write-us textarea {
