@@ -64,7 +64,6 @@ header{
   margin: 0 auto;
   padding: 0 10px;
 }
-/*HEADER START*/
 
 .upper-section {
   height: 42px;
@@ -500,6 +499,7 @@ background-color: #518534;
 }
 
 .logout-button {
+  display: block;
   margin: 0;
   padding: 0;
   background: none;
@@ -603,9 +603,7 @@ background-color: #518534;
   background-color: #293449;
   color: rgba(255, 255, 255, 0.5);
 }
-/*HEADER END*/
 
-/*MAIN START*/
 .infoblock-section {
   padding-top: 60px;
   padding-bottom: 48px;
@@ -778,7 +776,6 @@ background-color: #518534;
   margin-bottom: 0;
 }
 
-/* СЛАЙДЕР */
 .slider {
   position: relative;
   width: 620px;
@@ -867,7 +864,6 @@ background-color: #518534;
   padding: 10px 0;
 }
 
-/* СЛАЙДЕР КОНЕЦ */
 .popular-products {
   margin-bottom: -1px;
 }
@@ -1123,6 +1119,10 @@ box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
   box-sizing: border-box;
 }
 
+.services-ship {
+  max-width: 280px;
+}
+
 .services-info h3 {
   margin-bottom: 24px;
 }
@@ -1210,7 +1210,6 @@ box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
 .flex-container h2 {
-  padding-left: 29px;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -1235,17 +1234,16 @@ box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
 .our-company h2 {
+  margin-top: 6px;
   margin-bottom: 26px;
 }
 
 .our-company p:first-of-type {
   margin-bottom: 24px;
-  padding-left: 30px;
   letter-spacing: 0.1px;
 }
 
 .our-company p:last-of-type {
-  padding-left: 30px;
   margin-bottom: 21px;
 }
 
@@ -1254,7 +1252,7 @@ box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
   margin: 0;
   padding: 0;
   padding-left: 30px;
-  margin-bottom: 42px;
+  margin-bottom: 36px;
 }
 
 .transport-companies li {
@@ -1264,7 +1262,7 @@ box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
   font-weight: 400;
   color: #000000;
   margin-bottom: 20px;
-  padding-left: 35px;
+  padding-left: 7px;
 }
 
 .transport-companies li:last-child {
@@ -1276,7 +1274,7 @@ box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
   width: 25px;
   height: 2px;
   position: absolute;
-  top: 15px;
+  top: 9px;
   left: -30px;
   background-image: url("../img/index-list.png");
   background-repeat: no-repeat;
@@ -1457,7 +1455,6 @@ fieldset {
   width: 180px;
   height: 20px;
 }
-/* ------------------- */
 
 .range-handle {
   top: 2px;
@@ -1494,7 +1491,6 @@ fieldset {
 .slider-filter-bar-2 {
   background-color: #d7dcde;
 }
-/* ------------------- */
 
 .price-values {
   display: -webkit-box;
@@ -2027,10 +2023,9 @@ fieldset {
   margin: 0;
 }
 
-/*MAIN END*/
-
-
-/*FOOTER START*/
+.about-perforators p:last-of-type {
+  letter-spacing: 0.14px;
+}
 
 .footer {
   background-color: #32425c;
@@ -2194,7 +2189,7 @@ fieldset {
   line-height: 18px;
   color: #ffffff;
   padding-top: 19px;
-  padding-bottom: 20px;
+  padding-bottom: 17px;
 }
 
 .main-footer .container {
@@ -2242,6 +2237,10 @@ fieldset {
   margin-right: 53px;
 }
 
+.contact-info span {
+  font-weight: 400;
+}
+
 .footer-social ul {
   display: -webkit-box;
   display: -moz-box;
@@ -2254,7 +2253,7 @@ fieldset {
   align-items: center;
   width: 132px;
   list-style-type: none;
-  margin:0;
+  margin: 0;
   padding: 0;
   padding-top: 13px;
 }
@@ -2305,10 +2304,6 @@ fieldset {
   color: #ee3643;
   text-decoration: none;
 }
-/*FOOTER END*/
-
-
-/*modal*/
 
 .modal {
   position: fixed;
