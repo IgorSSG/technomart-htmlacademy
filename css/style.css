@@ -64,7 +64,6 @@ header{
   margin: 0 auto;
   padding: 0 10px;
 }
-/*HEADER START*/
 
 .upper-section {
   height: 42px;
@@ -500,6 +499,7 @@ background-color: #518534;
 }
 
 .logout-button {
+  display: block;
   margin: 0;
   padding: 0;
   background: none;
@@ -603,9 +603,7 @@ background-color: #518534;
   background-color: #293449;
   color: rgba(255, 255, 255, 0.5);
 }
-/*HEADER END*/
 
-/*MAIN START*/
 .infoblock-section {
   padding-top: 60px;
   padding-bottom: 48px;
@@ -778,7 +776,6 @@ background-color: #518534;
   margin-bottom: 0;
 }
 
-/* СЛАЙДЕР */
 .slider {
   position: relative;
   width: 620px;
@@ -867,7 +864,6 @@ background-color: #518534;
   padding: 10px 0;
 }
 
-/* СЛАЙДЕР КОНЕЦ */
 .popular-products {
   margin-bottom: -1px;
 }
@@ -1459,7 +1455,6 @@ fieldset {
   width: 180px;
   height: 20px;
 }
-/* ------------------- */
 
 .range-handle {
   top: 2px;
@@ -1496,7 +1491,6 @@ fieldset {
 .slider-filter-bar-2 {
   background-color: #d7dcde;
 }
-/* ------------------- */
 
 .price-values {
   display: -webkit-box;
@@ -2029,10 +2023,9 @@ fieldset {
   margin: 0;
 }
 
-/*MAIN END*/
-
-
-/*FOOTER START*/
+.about-perforators p:last-of-type {
+  letter-spacing: 0.14px;
+}
 
 .footer {
   background-color: #32425c;
@@ -2311,10 +2304,6 @@ fieldset {
   color: #ee3643;
   text-decoration: none;
 }
-/*FOOTER END*/
-
-
-/*modal*/
 
 .modal {
   position: fixed;
