@@ -2,11 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-mini.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -18,8 +19,8 @@
           </a>
           <div class="search-section">
             <form action="#" method="get" enctype="multipart/form-data">
-              <input id="search" type="search" name="main-search" placeholder="Поиск:">
-              <label class="search-label" for="search"></label>
+              <input id="search" type="search" name="main-search" placeholder="Поиск:" aria-label="Поиск">
+              <label class="search-label"></label>
             </form>
           </div>
           <ul class="user-instruments">
@@ -36,7 +37,7 @@
       <section class="info-section">
         <h2 class="visually-hidden">Краткая информация и контакты</h2>
         <div class="container">
-          <p class="text-about-company">Интернет магазин<br>строительных материалов<br>и инструментов для ремонта</p>
+          <p class="text-about-company">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</p>
           <div class="contacts">
             <a class="button phone-button" href="tel:+78125550555"><span>+7 (812) 555-05-55</span></a>
             <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -57,7 +58,7 @@
       <nav class="main-navigation">
         <div class="container">
           <ul class="main-navigation-list">
-            <li class="main-navigation-item"><a class="main-navigation-button" href="index.html">Информация</a></li>
+            <li class="main-navigation-item"><a class="main-navigation-button" href="index.html">Главная</a></li>
             <li class="main-navigation-item"><a class="main-navigation-button" href="about.html">Компания</a></li>
             <li class="main-navigation-item"><a class="main-navigation-button" href="catalog.html">Каталог</a></li>
             <li class="main-navigation-item"><a class="main-navigation-button" href="news.html">Новости</a></li>
@@ -242,9 +243,9 @@
               <li class="services-garanty hide-service">
                 <h3>Гарантия</h3>
                 <p>Если купленный у нас товар поломается или заискрит,<br>
-                  а также в случае пожара, спровоцированного его<br>
-                  возгаранием, вы всегда можете быть уверены<br>
-                  в нашей гарантии. Мы обменяем сгоревший товар на<br>
+                  а также в случае пожара, спровоцированного его
+                  возгаранием, вы всегда можете быть уверены
+                  в нашей гарантии. Мы обменяем сгоревший товар на
                   новый.</p>
                 <p>Дом уж восстановите как-нибудь сами.</p>
                 <img class="services-picture-garanty" src="img/garanty.png" width="389" height="283" alt="Медаль">
@@ -262,7 +263,7 @@
       </section>
       <div class="flex-container container">
         <section class="our-company">
-          <h2>Компания "Техномарт"</h2>
+          <h2>Компания «Техномарт»</h2>
           <p class="main-text-our-company">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
           <p class="main-text-our-company">Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями:</p>
           <ul class="transport-companies">
@@ -275,8 +276,8 @@
         <section class="contacts-info">
           <h2>Контакты</h2>
           <p class="main-text-contacts">Вы можете забрать товар сами,<br>заехав в наш офис:</p>
-          <button class="map-button" type="button"></button>
-          <button class="red-button contact-us-button" type="button">Заблудились? Напишите нам!</button>
+          <a class="map-button" href="map.html"></a>
+          <a class="red-button contact-us-button" href="contact-us.html">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </main>
@@ -327,7 +328,7 @@
             </div>
             <div class="footer-copyright">
                 Разработано:<br>
-                <a class="footer-link" href="https://htmlacademy.ru">htmlacademy.ru</a>
+                <a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </div>
           </div>
         </div>
@@ -339,21 +340,21 @@
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form-answer">
           <div>
-            <h3>Ваше имя:</h3>
             <label>
-              <input type="text" name="name" placeholder="Имя Фамилия">
+              <h3>Ваше имя:</h3>
+              <input class="form-input" type="text" name="name" placeholder="Имя Фамилия" aria-label="Ваше-имя">
             </label>
           </div>
           <div>
-            <h3>Ваш e-mail:</h3>
             <label>
-              <input type="email" name="email" placeholder="email@example.com">
+              <h3>Ваш e-mail:</h3>
+              <input class="form-input" type="email" name="email" placeholder="email@example.com" aria-label="Ваш-e-mail">
             </label>
           </div>
         </div>
         <div class="form-text-area">
-          <h3>Текст письма:</h3>
           <label>
+            <h3>Текст письма:</h3>
             <textarea name="letter-text" placeholder="В свободной форме"></textarea>
           </label>
         </div>
@@ -363,10 +364,8 @@
     <section class="modal modal-map">
       <button class="modal-close" type="button" name="modal-close">Закрыть</button>
       <h2 class="visually-hidden">Как проехать</h2>
-      <img src="img/map-popup.jpg" width="1736" height="779" alt="Большая картинка карты">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533252!2d30.320858716324643!3d59.938716481876185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1552421851513" width="940" height="446.2" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>
-    <script src="js/popups.js"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/services.js"></script>
+    <script src="js/script-mini.js"></script>
   </body>
 </html>
