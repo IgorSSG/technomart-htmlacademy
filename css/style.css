@@ -2486,7 +2486,8 @@ fieldset {
   background-color: #ba2732;
 }
 
-.modal-write-us h3 {
+.form-answer-title {
+  display: block;
   margin: 0;
   margin-bottom: 10px;
   font: inherit;
